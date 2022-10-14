@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace QuickSort
 {
+    public enum Comparacao
+    {
+        Maior = 1,
+        Igual = 0,
+        Menor = -1
+    }
     public static class Operations
     {
-        public static bool comparar(String palavra1, String palavra2)
+        public static int Comparar(String palavra1, String palavra2)
         {
-            return String.Compare(palavra1, palavra2) == 1;
+            return String.Compare(palavra1, palavra2);
         }
     }
 }

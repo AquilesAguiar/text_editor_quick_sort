@@ -6,42 +6,41 @@ using System.Threading.Tasks;
 
 namespace QuickSort
 {
+    
     public static class QuickSortMethod
     {
-        public static String[] SortArray(String[] array, int leftIndex, int rightIndex)
+        private static int partition(ref List<String> lista, int inicio, int fim)
         {
-            var i = leftIndex;
-            var j = rightIndex;
-            String pivot = array[leftIndex];
-
-            while (i <= j)
+            String pivot = lista[fim];
+            int i = inicio;
+            for (int j = inicio; j < fim;  j++)
             {
-                // while (array[i] < pivot)
-                while (Operations.comparar(pivot, array[i]))
+                int menorOrIgual = Operations.Comparar(lista[j], pivot);
+                if (menorOrIgual == ((int)Comparacao.Menor) || menorOrIgual == ((int)Comparacao.Igual))
                 {
+                    String vlrAntigo = lista[j];
+                    lista[j] = lista[i];
+                    lista[i] = vlrAntigo;
                     i++;
-                }
-
-                while (Operations.comparar(array[j], pivot))
-                {
-                    j--;
-                }
-
-                if (i <= j)
-                {
-                    String temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                    i++;
-                    j--;
                 }
             }
+            String vlrAntigo2 = lista[i];
+            lista[i] = lista[fim];
+            lista[fim] = vlrAntigo2;
 
-            if (leftIndex < j) SortArray(array, leftIndex, j);
+            return i;
+        }
+        public static void QuickSort(ref List<String> lista, int inicio = 0, int fim = -1)
+        {
+            if (fim == -1) fim = lista.Count - 1;
 
-            if (i < rightIndex) SortArray(array, i, rightIndex);
+            if (inicio < fim)
+            {
+                int p = partition(ref lista, inicio, fim);
+                QuickSort(ref lista, inicio, p - 1);
+                QuickSort(ref lista, p + 1, fim);
+            }
 
-            return array;
         }
     }
 }
