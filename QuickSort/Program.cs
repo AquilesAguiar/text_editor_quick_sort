@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuickSort.AlgoritmosSorteamento;
+using System;
 using System.Collections.Generic;
 
 namespace QuickSort
@@ -15,9 +16,12 @@ namespace QuickSort
                 "aaa",
                 "aab"
             };// new() { "Xuxu", "Xuxu", "Cenoura", "Picles", "Repolho", "Brocolis", "Couve-flor", "Alface"};
-            QuickSortMethod.QuickSort(ref palavras);
-            String printado = String.Join(", ", palavras);
-            Console.WriteLine(printado);
+            var quickSortResult = QuickSortMethod.QuickSort(palavras);
+            var bubbleSortResult = BubbleSort.bubbleSort(palavras);
+
+            String printadoQuick  = String.Join(", ", quickSortResult);
+            String printadoBubble = String.Join(", ", bubbleSortResult);
+            Console.WriteLine($"QuickSort: {printadoQuick}\nBubbleSort: {printadoBubble}");
         }
 
         
