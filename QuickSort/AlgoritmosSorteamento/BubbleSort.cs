@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace QuickSort.AlgoritmosSorteamento
 {
-    public class BubbleSort
+    public class BubbleSort : ISorteamento
     {
-		public static List<String> bubbleSort(List<String> vetor)
+		public List<String> Sortear(List<String> vetor, int inicio, int final)
 		{
 			int tamanho = vetor.Count;
 			int comparacoes = 0;
@@ -19,7 +19,7 @@ namespace QuickSort.AlgoritmosSorteamento
 				for (int j = 0; j < i; j++)
 				{
 					comparacoes++;
-					if ( Operations.Comparar(vetor[j], vetor[j + 1]) == (int)Comparacao.Maior )
+					if ( Operations.Comparar(vetor[j], vetor[j + 1]) is ((int)Comparacao.Maior) )
 					{
 						String aux = vetor[j];
 						vetor[j] = vetor[j + 1];

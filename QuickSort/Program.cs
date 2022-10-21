@@ -16,8 +16,10 @@ namespace QuickSort
                 "aaa",
                 "aab"
             };// new() { "Xuxu", "Xuxu", "Cenoura", "Picles", "Repolho", "Brocolis", "Couve-flor", "Alface"};
-            var quickSortResult = QuickSortMethod.QuickSort(palavras);
-            var bubbleSortResult = BubbleSort.bubbleSort(palavras);
+            ISorteamento QuickSortMethod = new QuickSortMethod();
+            ISorteamento BubbleSort = new BubbleSort();
+            List<String> quickSortResult = QuickSortMethod.Sortear(palavras);
+            List<String> bubbleSortResult = BubbleSort.Sortear(palavras);
 
             String printadoQuick  = String.Join(", ", quickSortResult);
             String printadoBubble = String.Join(", ", bubbleSortResult);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace QuickSort.AlgoritmosSorteamento
 {
     
-    public static class QuickSortMethod
+    public class QuickSortMethod : ISorteamento
     {
         private static int partition( List<String> lista, int inicio, int fim)
         {
@@ -16,7 +16,7 @@ namespace QuickSort.AlgoritmosSorteamento
             for (int j = inicio; j < fim;  j++)
             {
                 int menorOrIgual = Operations.Comparar(lista[j], pivot);
-                if (menorOrIgual == ((int)Comparacao.Menor) || menorOrIgual == ((int)Comparacao.Igual))
+                if (menorOrIgual is (int)Comparacao.Menor or (int)Comparacao.Igual)
                 {
                     String vlrAntigo = lista[j];
                     lista[j] = lista[i];
@@ -30,15 +30,15 @@ namespace QuickSort.AlgoritmosSorteamento
 
             return i;
         }
-        public static List<String> QuickSort(List<String> lista, int inicio = 0, int fim = -1)
+        public List<String> Sortear(List<String> lista, int inicio = 0, int fim = -1)
         {
             if (fim == -1) fim = lista.Count - 1;
 
             if (inicio < fim)
             {
                 int p = partition(lista, inicio, fim);
-                QuickSort(lista, inicio, p - 1);
-                QuickSort(lista, p + 1, fim);
+                Sortear(lista, inicio, p - 1);
+                Sortear(lista, p + 1, fim);
             }
             return lista;
 
