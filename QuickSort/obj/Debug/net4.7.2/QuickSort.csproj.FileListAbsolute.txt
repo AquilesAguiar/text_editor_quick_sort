@@ -1,0 +1,9 @@
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.AssemblyInfoInputs.cache
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.AssemblyInfo.cs
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.csproj.CoreCompileInputs.cache
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\bin\Debug\net4.7.2\QuickSort.pdb
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.pdb
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.csproj.AssemblyReference.cache
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\bin\Debug\net4.7.2\QuickSort.dll
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\QuickSort\obj\Debug\net4.7.2\QuickSort.dll

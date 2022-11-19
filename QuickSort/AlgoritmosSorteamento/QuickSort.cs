@@ -16,7 +16,7 @@ namespace QuickSort.AlgoritmosSorteamento
             for (int j = inicio; j < fim;  j++)
             {
                 int menorOrIgual = Operations.Comparar(lista[j], pivot);
-                if (menorOrIgual is (int)Comparacao.Menor or (int)Comparacao.Igual)
+                if (menorOrIgual is (int)Comparacao.Menor || menorOrIgual is  (int)Comparacao.Igual)
                 {
                     String vlrAntigo = lista[j];
                     lista[j] = lista[i];

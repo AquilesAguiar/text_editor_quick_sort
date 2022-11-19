@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QuickSort"
+    "\\QuickSort",
+    "\\QuickSort\\AlgoritmosSorteamento"
   ],
-  "SelectedNode": "\\QuickSort\\Program.cs",
+  "SelectedNode": "\\QuickSort\\AlgoritmosSorteamento\\BubbleSort.cs",
   "PreviewInSolutionExplorer": false
 }

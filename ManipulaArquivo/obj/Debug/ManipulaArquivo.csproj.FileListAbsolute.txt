@@ -1,0 +1,2 @@
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo\obj\Debug\ManipulaArquivo.csproj.AssemblyReference.cache
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo\obj\Debug\ManipulaArquivo.csproj.CoreCompileInputs.cache

@@ -8,6 +8,6 @@ namespace QuickSort.AlgoritmosSorteamento
 {
     public interface ISorteamento
     {
-        public List<String> Sortear(List<String> lista, int inicio = 0, int final = -1);
+        List<String> Sortear(List<String> lista, int inicio = 0, int final = -1);
     }
 }
