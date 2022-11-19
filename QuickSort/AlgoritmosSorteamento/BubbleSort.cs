@@ -8,9 +8,9 @@ namespace QuickSort.AlgoritmosSorteamento
 {
     public class BubbleSort : ISorteamento
     {
-		public List<String> Sortear(List<String> vetor, int inicio, int final)
+		public string[] Sortear(string[] vetor, int inicio, int final)
 		{
-			int tamanho = vetor.Count;
+			int tamanho = vetor.Length;
 			int comparacoes = 0;
 			int trocas = 0;
 

@@ -14,28 +14,31 @@ namespace Telas
 {
     public partial class Form1 : Form
     {
+        List<Palavra> naoContidas = new List<Palavra>();
+        IManipularArquivo manipularArquivo = new ManipularArquivo();
+        private string dicionario;
+        private string dirAtual;
         public Form1()
         {
             InitializeComponent();
+            dirAtual = manipularArquivo.getDirAtual();
+            dicionario = manipularArquivo.lerArquivo(dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt");
         }
 
         private void Verificar(object sender, EventArgs e)
         {
-            IManipularArquivo manipularArquivo = new ManipularArquivo();
-            string dirAtual = manipularArquivo.getDirAtual();
             string dirTeste = dirAtual +"\\..\\..\\..\\Arquivos\\teste.txt";
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
             // Lendo o dicionário e 
             string textoCompleto = manipularArquivo.lerArquivo(dirTeste);
             string dicionarioCompleto = manipularArquivo.lerArquivo(dirDicionario);
             // Splitando as palavras do dicionário e do TextBox
-            List<string> palavras = textoCompleto.Split(' ').ToList();
-            List<string> palavrasDicionario = dicionarioCompleto.Split(' ').ToList();
+            string[] palavras = textoCompleto.Split(' ').ToArray();
+            string[] palavrasDicionario = dicionarioCompleto.Split(' ').ToArray();
             // Pegando as palavras do TextBox que tem no dicionário
-            List<string> notPalavrasEmComum = palavras.Where(palavra => !palavrasDicionario.Contains(palavra)).ToList();
+            string[] notPalavrasEmComum = palavras.Where(palavra => !palavrasDicionario.Contains(palavra)).ToArray();
             PalavrasComum.Text = String.Join(" ", notPalavrasEmComum) ;
-            List<Palavra> naoContidas = new List<Palavra>();
-            for (int i = 0; i < notPalavrasEmComum.Count; i++)
+            for (int i = 0; i < notPalavrasEmComum.Length; i++)
             {
                 naoContidas.Add(new Palavra(i, notPalavrasEmComum[i]));
             }
@@ -43,10 +46,12 @@ namespace Telas
             TabelaPalavras.DataSource = naoContidas;
             TabelaPalavras.Visible = true;
 
+
+
             ISorteamento QuickSortMethod = new QuickSortMethod();
             ISorteamento BubbleSort = new BubbleSort();
-            List<String> quickSortResult = QuickSortMethod.Sortear(palavras);
-            List<String> bubbleSortResult = BubbleSort.Sortear(palavras);
+            string[] quickSortResult = QuickSortMethod.Sortear(palavras);
+            string[] bubbleSortResult = BubbleSort.Sortear(palavras);
 
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
@@ -59,6 +64,25 @@ namespace Telas
         private void PalavrasComum_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SalvarTabelaDicionario(object sender, EventArgs e)
+        {
+            string[] palavras = naoContidas.Where(p => p.Dicionario).Select(p => p.Nome).ToArray();
+            string[] dicionarioSplitted = dicionario.Split(' ').ToArray();
+            for (int i = 0; i < palavras.Length; i++)
+            {
+                dicionarioSplitted[dicionarioSplitted.Length + i + 1] = palavras[i];
+            }
+            ISorteamento quickSort = new QuickSortMethod();
+            Console.WriteLine(String.Join(" ", dicionarioSplitted));
+            palavras = quickSort.Sortear(dicionarioSplitted);
+            Console.WriteLine(String.Join(" ", dicionarioSplitted));
+
+            IManipularArquivo manipular = new ManipularArquivo();
+            string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
+
+            manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", dicionarioSplitted));
         }
     }
 }

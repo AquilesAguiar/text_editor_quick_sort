@@ -9,7 +9,7 @@ namespace QuickSort.AlgoritmosSorteamento
     
     public class QuickSortMethod : ISorteamento
     {
-        private static int partition( List<String> lista, int inicio, int fim)
+        private static int partition( string[] lista, int inicio, int fim)
         {
             String pivot = lista[fim];
             int i = inicio;
@@ -30,9 +30,9 @@ namespace QuickSort.AlgoritmosSorteamento
 
             return i;
         }
-        public List<String> Sortear(List<String> lista, int inicio = 0, int fim = -1)
+        public string[] Sortear(string[] lista, int inicio = 0, int fim = -1)
         {
-            if (fim == -1) fim = lista.Count - 1;
+            if (fim == -1) fim = lista.Length - 1;
 
             if (inicio < fim)
             {

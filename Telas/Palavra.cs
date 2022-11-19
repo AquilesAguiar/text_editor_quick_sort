@@ -11,7 +11,6 @@ namespace Telas
         public int Id { get; set; }
         public string Nome { get; set; }
         public bool Dicionario { get; set; } = false;
-        public bool Bloqueada { get; set; } = false;
 
         public Palavra(int id, string nome)
         {
