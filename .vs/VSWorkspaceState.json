@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\QuickSort",
-    "\\QuickSort\\AlgoritmosSorteamento"
+    "\\QuickSort\\AlgoritmosSorteamento",
+    "\\Telas"
   ],
-  "SelectedNode": "\\QuickSort\\AlgoritmosSorteamento\\BubbleSort.cs",
+  "SelectedNode": "\\Telas\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
