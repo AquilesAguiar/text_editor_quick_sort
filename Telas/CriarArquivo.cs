@@ -4,9 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -32,13 +34,14 @@ namespace Telas
         private void Verificar(object sender, EventArgs e)
         {
             manipularArquivo.adicionarEscritaArquivo(caminhoArquivo, CampoTexto.Text);
-            string dirTeste = dirAtual +"\\..\\..\\..\\Arquivos\\teste.txt";
+
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
-            // Lendo o dicionário e 
-            string textoCompleto = manipularArquivo.lerArquivo(dirTeste);
+            // Lendo o dicionário e arquivo criado
+            string textoCompleto = manipularArquivo.lerArquivo(caminhoArquivo).ToLower();
             string dicionarioCompleto = manipularArquivo.lerArquivo(dirDicionario);
             // Splitando as palavras do dicionário e do TextBox
-            string[] palavras = textoCompleto.Split(' ').ToArray();
+            string textoFormatado = Regex.Replace(textoCompleto, @"[^0-9a-zA-Z ]", "");
+            string[] palavras = textoFormatado.Split(' ').ToArray();
             string[] palavrasDicionario = dicionarioCompleto.Split(' ').ToArray();
             // Pegando as palavras do TextBox que tem no dicionário
             string[] notPalavrasEmComum = palavras.Where(palavra => !palavrasDicionario.Contains(palavra)).ToArray();
@@ -49,15 +52,34 @@ namespace Telas
             }
 
             TabelaPalavras.DataSource = naoContidas;
+            labelPalavra.Visible = true;
             TabelaPalavras.Visible = true;
             SalvarTabela.Visible = true;
 
-
-
+            var stopwatch = new Stopwatch();
+                        
             ISorteamento QuickSortMethod = new QuickSortMethod();
+            
             ISorteamento BubbleSort = new BubbleSort();
+
+            //Contagem QuickSort
+            stopwatch.Start();
+
             string[] quickSortResult = QuickSortMethod.Sortear(palavras);
+
+            stopwatch.Stop();
+            Console.WriteLine($"Tempo passado QuickSort: {stopwatch.Elapsed}");
+
+            //Restart Contagem
+            stopwatch.Restart();
+
+            //Contagem BubbleSort
+            stopwatch.Start();
+
             string[] bubbleSortResult = BubbleSort.Sortear(palavras);
+
+            stopwatch.Stop();
+            Console.WriteLine($"Tempo passado BubbleSort: {stopwatch.Elapsed}");
 
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
@@ -87,6 +109,11 @@ namespace Telas
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
 
             manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", dicionarioSplitted));
+
+            this.Hide();
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.ShowDialog();
+            this.Show();
         }
 
         private void CampoTexto_TextChanged(object sender, EventArgs e)

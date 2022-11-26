@@ -33,7 +33,7 @@ namespace Telas
             this.BtnVerificar = new System.Windows.Forms.Button();
             this.TabelaPalavras = new System.Windows.Forms.DataGridView();
             this.SalvarTabela = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelPalavra = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.TabelaPalavras)).BeginInit();
@@ -77,17 +77,18 @@ namespace Telas
             this.SalvarTabela.UseVisualStyleBackColor = true;
             this.SalvarTabela.Click += new System.EventHandler(this.SalvarTabelaDicionario);
             // 
-            // label1
+            // labelPalavra
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 256);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 29);
-            this.label1.TabIndex = 50;
-            this.label1.Text = "Salva palavras no dicionario";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.labelPalavra.AutoSize = true;
+            this.labelPalavra.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPalavra.Location = new System.Drawing.Point(40, 256);
+            this.labelPalavra.Name = "labelPalavra";
+            this.labelPalavra.Size = new System.Drawing.Size(313, 29);
+            this.labelPalavra.TabIndex = 50;
+            this.labelPalavra.Text = "Salva palavras no dicionario";
+            this.labelPalavra.Visible = false;
+            this.labelPalavra.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -101,18 +102,18 @@ namespace Telas
             this.label2.Text = "Escrever texto";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Form1
+            // CriarArquivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 450);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPalavra);
             this.Controls.Add(this.SalvarTabela);
             this.Controls.Add(this.TabelaPalavras);
             this.Controls.Add(this.BtnVerificar);
             this.Controls.Add(this.CampoTexto);
-            this.Name = "Form1";
+            this.Name = "CriarArquivo";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TabelaPalavras)).EndInit();
@@ -127,7 +128,7 @@ namespace Telas
         private System.Windows.Forms.Button BtnVerificar;
         private System.Windows.Forms.DataGridView TabelaPalavras;
         private System.Windows.Forms.Button SalvarTabela;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelPalavra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }

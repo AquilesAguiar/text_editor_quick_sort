@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelSalvaPalavra = new System.Windows.Forms.Label();
+            this.btnArquivo = new System.Windows.Forms.Button();
             this.SalvarTabela = new System.Windows.Forms.Button();
             this.TabelaPalavras = new System.Windows.Forms.DataGridView();
             this.BtnVerificar = new System.Windows.Forms.Button();
             this.CampoTexto = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.TabelaPalavras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,27 +49,28 @@
             this.label2.Size = new System.Drawing.Size(163, 29);
             this.label2.TabIndex = 58;
             this.label2.Text = "Editar Arquivo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // labelSalvaPalavra
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 247);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 29);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Salva palavras no dicionario";
+            this.labelSalvaPalavra.AutoSize = true;
+            this.labelSalvaPalavra.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelSalvaPalavra.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSalvaPalavra.Location = new System.Drawing.Point(12, 247);
+            this.labelSalvaPalavra.Name = "labelSalvaPalavra";
+            this.labelSalvaPalavra.Size = new System.Drawing.Size(313, 29);
+            this.labelSalvaPalavra.TabIndex = 57;
+            this.labelSalvaPalavra.Text = "Salva palavras no dicionario";
+            this.labelSalvaPalavra.Visible = false;
             // 
-            // button1
+            // btnArquivo
             // 
-            this.button1.Location = new System.Drawing.Point(908, 145);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 44);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "Carregar Arquivo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnArquivo.Location = new System.Drawing.Point(908, 41);
+            this.btnArquivo.Name = "btnArquivo";
+            this.btnArquivo.Size = new System.Drawing.Size(138, 44);
+            this.btnArquivo.TabIndex = 56;
+            this.btnArquivo.Text = "Carregar Arquivo";
+            this.btnArquivo.UseVisualStyleBackColor = true;
+            this.btnArquivo.Click += new System.EventHandler(this.btnArquivo_Click);
             // 
             // SalvarTabela
             // 
@@ -78,6 +80,8 @@
             this.SalvarTabela.TabIndex = 55;
             this.SalvarTabela.Text = "Salvar";
             this.SalvarTabela.UseVisualStyleBackColor = true;
+            this.SalvarTabela.Visible = false;
+            this.SalvarTabela.Click += new System.EventHandler(this.SalvarTabelaDicionario);
             // 
             // TabelaPalavras
             // 
@@ -90,34 +94,40 @@
             // 
             // BtnVerificar
             // 
-            this.BtnVerificar.Location = new System.Drawing.Point(908, 41);
+            this.BtnVerificar.Location = new System.Drawing.Point(908, 145);
             this.BtnVerificar.Name = "BtnVerificar";
             this.BtnVerificar.Size = new System.Drawing.Size(138, 44);
             this.BtnVerificar.TabIndex = 53;
             this.BtnVerificar.Text = "Verificar";
             this.BtnVerificar.UseVisualStyleBackColor = true;
+            this.BtnVerificar.Click += new System.EventHandler(this.BtnVerificar_Click);
             // 
             // CampoTexto
             // 
+            this.CampoTexto.Enabled = false;
             this.CampoTexto.Location = new System.Drawing.Point(17, 41);
             this.CampoTexto.Name = "CampoTexto";
             this.CampoTexto.Size = new System.Drawing.Size(885, 148);
             this.CampoTexto.TabIndex = 52;
             this.CampoTexto.Text = "";
             // 
-            // Form3
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // EditarArquivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 450);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelSalvaPalavra);
+            this.Controls.Add(this.btnArquivo);
             this.Controls.Add(this.SalvarTabela);
             this.Controls.Add(this.TabelaPalavras);
             this.Controls.Add(this.BtnVerificar);
             this.Controls.Add(this.CampoTexto);
-            this.Name = "Form3";
+            this.Name = "EditarArquivo";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.TabelaPalavras)).EndInit();
             this.ResumeLayout(false);
@@ -127,11 +137,13 @@
 
         #endregion
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelSalvaPalavra;
+        private System.Windows.Forms.Button btnArquivo;
         private System.Windows.Forms.Button SalvarTabela;
         private System.Windows.Forms.DataGridView TabelaPalavras;
         private System.Windows.Forms.Button BtnVerificar;
         private System.Windows.Forms.RichTextBox CampoTexto;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
