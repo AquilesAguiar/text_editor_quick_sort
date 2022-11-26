@@ -12,21 +12,26 @@ using System.Windows.Forms;
 
 namespace Telas
 {
-    public partial class Form1 : Form
+    public partial class CriarArquivo : Form
     {
         List<Palavra> naoContidas = new List<Palavra>();
         IManipularArquivo manipularArquivo = new ManipularArquivo();
         private string dicionario;
         private string dirAtual;
-        public Form1()
+        private string caminhoArquivo;
+
+        public CriarArquivo()
         {
+            caminhoArquivo = Operations.criaArquivo();
             InitializeComponent();
+            SalvarTabela.Visible= false;
             dirAtual = manipularArquivo.getDirAtual();
             dicionario = manipularArquivo.lerArquivo(dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt");
         }
 
         private void Verificar(object sender, EventArgs e)
         {
+            manipularArquivo.adicionarEscritaArquivo(caminhoArquivo, CampoTexto.Text);
             string dirTeste = dirAtual +"\\..\\..\\..\\Arquivos\\teste.txt";
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
             // Lendo o dicionário e 
@@ -37,7 +42,7 @@ namespace Telas
             string[] palavrasDicionario = dicionarioCompleto.Split(' ').ToArray();
             // Pegando as palavras do TextBox que tem no dicionário
             string[] notPalavrasEmComum = palavras.Where(palavra => !palavrasDicionario.Contains(palavra)).ToArray();
-            PalavrasComum.Text = String.Join(" ", notPalavrasEmComum) ;
+
             for (int i = 0; i < notPalavrasEmComum.Length; i++)
             {
                 naoContidas.Add(new Palavra(i, notPalavrasEmComum[i]));
@@ -45,6 +50,7 @@ namespace Telas
 
             TabelaPalavras.DataSource = naoContidas;
             TabelaPalavras.Visible = true;
+            SalvarTabela.Visible = true;
 
 
 
@@ -56,9 +62,6 @@ namespace Telas
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
             Console.WriteLine($"QuickSort: {printadoQuick}\nBubbleSort: {printadoBubble}");
-            CampoTexto.Text = printadoQuick;
-
-
         }
 
         private void PalavrasComum_Click(object sender, EventArgs e)
@@ -69,20 +72,51 @@ namespace Telas
         private void SalvarTabelaDicionario(object sender, EventArgs e)
         {
             string[] palavras = naoContidas.Where(p => p.Dicionario).Select(p => p.Nome).ToArray();
-            string[] dicionarioSplitted = dicionario.Split(' ').ToArray();
+            List<string> dicionarioSplitted = dicionario.Split(' ').ToList();
             for (int i = 0; i < palavras.Length; i++)
             {
-                dicionarioSplitted[dicionarioSplitted.Length + i + 1] = palavras[i];
+                dicionarioSplitted.Add(palavras[i]);
             }
+            var dic = dicionarioSplitted.ToArray();
             ISorteamento quickSort = new QuickSortMethod();
             Console.WriteLine(String.Join(" ", dicionarioSplitted));
-            palavras = quickSort.Sortear(dicionarioSplitted);
+            palavras = quickSort.Sortear(dic);
             Console.WriteLine(String.Join(" ", dicionarioSplitted));
 
             IManipularArquivo manipular = new ManipularArquivo();
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
 
             manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", dicionarioSplitted));
+        }
+
+        private void CampoTexto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

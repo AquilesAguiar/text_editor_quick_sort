@@ -16,5 +16,19 @@ namespace Telas
             manipular.sobrescreverArquivo(dir, textoUsar);
         }
 
+        public static string criaArquivo()
+        {   
+            String caminho = "\\..\\..\\..\\Arquivos\\";
+            String timeStamp = GetTimestamp(DateTime.Now);
+            IManipularArquivo manipularArquivo = new ManipularArquivo();
+
+            return manipularArquivo.criarArquivo(caminho, $"Arquivo{timeStamp}.txt", Array.Empty<String>());
+        }
+
+        public static String GetTimestamp(DateTime value)
+        {
+            return value.ToString("yyyyMMddHHmmssffff");
+        }
+
     }
 }

@@ -8,3 +8,13 @@ C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.csproj.CoreCompileInputs.cache
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.dll
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.pdb
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\bin\Debug\net4.7.2\ManipulaArquivo.dll.config
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\bin\Debug\net4.7.2\ManipulaArquivo.dll
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\bin\Debug\net4.7.2\ManipulaArquivo.pdb
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.csproj.AssemblyReference.cache
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.AssemblyInfoInputs.cache
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.AssemblyInfo.cs
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.csproj.CoreCompileInputs.cache
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.dll
+C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\ManipulaArquivo\obj\Debug\net4.7.2\ManipulaArquivo.pdb

@@ -36,15 +36,15 @@ namespace ManipulaArquivo
             return Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory.ToString());
         }
 
-        public void criarArquivo(string dir, string nomeArquivo, string[] conteudo)
+        public string criarArquivo(string dir, string nomeArquivo, string[] conteudo)
         {
-            string arquivo = Path.Combine(dir, nomeArquivo);
-
-            Directory.CreateDirectory(dir);
+            string arquivo = @"..\..\..\Arquivos\" + nomeArquivo;
 
             File.Create(arquivo).Dispose();
 
             File.WriteAllLines(arquivo, conteudo);
+
+            return arquivo;
         }
     }
 }

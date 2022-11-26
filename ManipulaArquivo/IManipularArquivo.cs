@@ -8,6 +8,6 @@ namespace ManipulaArquivo
         void sobrescreverArquivo(string diretorio, string textoEscrever);
         void adicionarEscritaArquivo(string diretorio, string textoAdicionar);
         string getDirAtual();
-        void criarArquivo(string dir, string nomeArquivo, string[] conteudo);
+        string criarArquivo(string dir, string nomeArquivo, string[] conteudo);
     }
 }
