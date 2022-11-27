@@ -1,0 +1,15 @@
+Massa de dados - 2
+Tempo de execução QuickSort - 00:00:00.0009967
+Tempo de execução BubbleSort - 00:00:00.0003417
+BubbleSort foi mais rapido por 0 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 1866
+Tempo de execução QuickSort - 00:00:00.2709576
+Tempo de execução BubbleSort - 00:00:00.3410627
+QuickSort foi mais rapido por 71 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 1865
+Tempo de execução QuickSort - 00:00:00.2656397
+Tempo de execução BubbleSort - 00:00:00.3123337
+QuickSort foi mais rapido por 47 Mili Secundos
+--------------------------------------------------------------------------------------

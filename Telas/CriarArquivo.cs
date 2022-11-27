@@ -68,7 +68,7 @@ namespace Telas
             string[] quickSortResult = QuickSortMethod.Sortear(palavras);
 
             stopwatch.Stop();
-            Console.WriteLine($"Tempo passado QuickSort: {stopwatch.Elapsed}");
+            TimeSpan QuickSortTs = stopwatch.Elapsed;
 
             //Restart Contagem
             stopwatch.Restart();
@@ -79,7 +79,11 @@ namespace Telas
             string[] bubbleSortResult = BubbleSort.Sortear(palavras);
 
             stopwatch.Stop();
-            Console.WriteLine($"Tempo passado BubbleSort: {stopwatch.Elapsed}");
+
+            TimeSpan BubbleSortTs = stopwatch.Elapsed;
+            
+            //Salvando dados da execução
+            Operations.testesExecucao(QuickSortTs, BubbleSortTs, palavras.Length);
 
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
@@ -103,12 +107,12 @@ namespace Telas
             ISorteamento quickSort = new QuickSortMethod();
             Console.WriteLine(String.Join(" ", dicionarioSplitted));
             palavras = quickSort.Sortear(dic);
-            Console.WriteLine(String.Join(" ", dicionarioSplitted));
+            Console.WriteLine(String.Join(" ", palavras));
 
             IManipularArquivo manipular = new ManipularArquivo();
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
 
-            manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", dicionarioSplitted));
+            manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", palavras));
 
             this.Hide();
             TelaPrincipal telaPrincipal = new TelaPrincipal();
