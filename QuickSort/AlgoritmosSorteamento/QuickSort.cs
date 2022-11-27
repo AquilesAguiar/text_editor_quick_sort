@@ -5,18 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace QuickSort.AlgoritmosSorteamento
-{
+{// Operations.Comparar(array[i], pivot)  is (int) Comparacao.Menor
     
     public class QuickSortMethod : ISorteamento
-    {
-        private static int partition( string[] lista, int inicio, int fim)
+    { // Operations.Comparar(array[i], pivot)  is (int) Comparacao.Menor
+        private static int partition(string[] lista, int inicio, int fim)
         {
             String pivot = lista[fim];
             int i = inicio;
-            for (int j = inicio; j < fim;  j++)
+            for (int j = inicio; j < fim; j++)
             {
                 int menorOrIgual = Operations.Comparar(lista[j], pivot);
-                if (menorOrIgual is (int)Comparacao.Menor || menorOrIgual is  (int)Comparacao.Igual)
+                if (menorOrIgual == ((int)Comparacao.Menor) || menorOrIgual == ((int)Comparacao.Igual))
                 {
                     String vlrAntigo = lista[j];
                     lista[j] = lista[i];
@@ -43,5 +43,6 @@ namespace QuickSort.AlgoritmosSorteamento
             return lista;
 
         }
+
     }
 }

@@ -3,7 +3,6 @@ C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\bin\Debug
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\bin\Debug\Telas.pdb
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\bin\Debug\QuickSort.pdb
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.csproj.AssemblyReference.cache
-C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.Form1.resources
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.Properties.Resources.resources
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.csproj.GenerateResource.cache
 C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.csproj.CoreCompileInputs.cache
@@ -33,3 +32,6 @@ C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\Telas\obj\Debug
 C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\Telas\obj\Debug\Telas.pdb
 C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\Telas\bin\Debug\Telas.exe.config
 C:\Users\aquil\OneDrive\Documentos\GitHub\text_editor_quick_sort\Telas\obj\Debug\Telas.csproj.CopyComplete
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.CriarArquivo.resources
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.TelaPrincipal.resources
+C:\Users\breno\Source\Repos\AquilesAguiar\text_editor_quick_sort\Telas\obj\Debug\Telas.EditarArquivo.resources

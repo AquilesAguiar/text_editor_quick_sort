@@ -36,6 +36,7 @@ namespace Telas
             this.labelPalavra = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.BtnSelectAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.TabelaPalavras)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +70,7 @@ namespace Telas
             // 
             // SalvarTabela
             // 
-            this.SalvarTabela.Location = new System.Drawing.Point(936, 327);
+            this.SalvarTabela.Location = new System.Drawing.Point(936, 373);
             this.SalvarTabela.Name = "SalvarTabela";
             this.SalvarTabela.Size = new System.Drawing.Size(138, 65);
             this.SalvarTabela.TabIndex = 4;
@@ -102,11 +103,22 @@ namespace Telas
             this.label2.Text = "Escrever texto";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // BtnSelectAll
+            // 
+            this.BtnSelectAll.Location = new System.Drawing.Point(936, 288);
+            this.BtnSelectAll.Name = "BtnSelectAll";
+            this.BtnSelectAll.Size = new System.Drawing.Size(138, 60);
+            this.BtnSelectAll.TabIndex = 52;
+            this.BtnSelectAll.Text = "Selecionar tudo";
+            this.BtnSelectAll.UseVisualStyleBackColor = true;
+            this.BtnSelectAll.Click += new System.EventHandler(this.button1_Click);
+            // 
             // CriarArquivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 450);
+            this.Controls.Add(this.BtnSelectAll);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelPalavra);
             this.Controls.Add(this.SalvarTabela);
@@ -131,6 +143,7 @@ namespace Telas
         private System.Windows.Forms.Label labelPalavra;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button BtnSelectAll;
     }
 }
 

@@ -47,6 +47,11 @@ namespace Telas
 
         private void BtnVerificar_Click(object sender, EventArgs e)
         {
+            naoContidas = new List<Palavra>();
+            foreach (DataGridViewRow item in this.TabelaPalavras.SelectedRows)
+            {
+                TabelaPalavras.Rows.RemoveAt(item.Index);
+            }
             labelSalvaPalavra.Visible = true;
             TabelaPalavras.Visible = true;
             SalvarTabela.Visible = true;
@@ -97,6 +102,8 @@ namespace Telas
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
             Console.WriteLine($"QuickSort: {printadoQuick}\nBubbleSort: {printadoBubble}");
+            TabelaPalavras.Update();
+            TabelaPalavras.Refresh();
 
         }
 
@@ -117,7 +124,7 @@ namespace Telas
             IManipularArquivo manipular = new ManipularArquivo();
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
 
-            manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", dicionarioSplitted));
+            manipular.sobrescreverArquivo(dirDicionario, String.Join(" ", palavras));
 
             this.Hide();
             TelaPrincipal telaPrincipal = new TelaPrincipal();
@@ -128,6 +135,14 @@ namespace Telas
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void BtnSelectAll_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < naoContidas.Count; i++)
+            {
+                naoContidas[i].Dicionario = true;
+            }
         }
     }
 

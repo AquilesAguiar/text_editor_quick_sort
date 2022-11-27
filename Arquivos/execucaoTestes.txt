@@ -13,3 +13,258 @@ Tempo de execução QuickSort - 00:00:00.2656397
 Tempo de execução BubbleSort - 00:00:00.3123337
 QuickSort foi mais rapido por 47 Mili Secundos
 --------------------------------------------------------------------------------------
+Massa de dados - 52
+Tempo de execução QuickSort - 00:00:00.0001940
+Tempo de execução BubbleSort - 00:00:00.0003101
+BubbleSort foi mais rapido por 0 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 1990
+Tempo de execução QuickSort - 00:00:00.0000063
+Tempo de execução BubbleSort - 00:00:00.1603188
+QuickSort foi mais rapido por 160 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 103
+Tempo de execução QuickSort - 00:00:00.0000005
+Tempo de execução BubbleSort - 00:00:00.0006673
+BubbleSort foi mais rapido por 0 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 3877
+Tempo de execução QuickSort - 00:00:00.0000005
+Tempo de execução BubbleSort - 00:00:00.9459209
+QuickSort foi mais rapido por 945 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 11629
+Tempo de execução QuickSort - 00:00:00.0000004
+Tempo de execução BubbleSort - 00:00:08.3071497
+QuickSort foi mais rapido por 307 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 7753
+Tempo de execução QuickSort - 00:00:00.0000006
+Tempo de execução BubbleSort - 00:00:03.6669341
+QuickSort foi mais rapido por 666 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 7753
+Tempo de execução QuickSort - 00:00:00.0000008
+Tempo de execução BubbleSort - 00:00:03.6444749
+QuickSort foi mais rapido por 644 Mili Secundos
+--------------------------------------------------------------------------------------
+Massa de dados - 7753
+Tempo de execução QuickSort - 00:00:00.0001808
+Tempo de execução BubbleSort - 00:00:03.7656501
+QuickSort foi mais rapido por 11297 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 2
+Tempo de execução QuickSort - 00:00:00.0000028
+Tempo de execução BubbleSort - 00:00:00.0000042
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 2
+Tempo de execução QuickSort - 00:00:00.0000004
+Tempo de execução BubbleSort - 00:00:00.0000027
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 7754
+Tempo de execução QuickSort - 00:00:00.0000004
+Tempo de execução BubbleSort - 00:00:03.6805738
+QuickSort foi mais rapido por 11042 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 7753
+Tempo de execução QuickSort - 00:00:00.0000006
+Tempo de execução BubbleSort - 00:00:03.6774874
+QuickSort foi mais rapido por 11031 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 5
+Tempo de execução QuickSort - 00:00:00.0000006
+Tempo de execução BubbleSort - 00:00:00.0000023
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 4
+Tempo de execução QuickSort - 00:00:00.0001892
+Tempo de execução BubbleSort - 00:00:00.0001493
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 6
+Tempo de execução QuickSort - 00:00:00.0000048
+Tempo de execução BubbleSort - 00:00:00.0000046
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0000004
+Tempo de execução BubbleSort - 00:00:00.0000336
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0001703
+Tempo de execução BubbleSort - 00:00:00.0001875
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003467
+Tempo de execução BubbleSort - 00:00:00.0001359
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003704
+Tempo de execução BubbleSort - 00:00:00.0001470
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0001100
+Tempo de execução BubbleSort - 00:00:00.0000467
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 51
+Tempo de execução QuickSort - 00:00:00.0002142
+Tempo de execução BubbleSort - 00:00:00.0001367
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 76
+Tempo de execução QuickSort - 00:00:00.0005142
+Tempo de execução BubbleSort - 00:00:00.0003199
+BubbleSort foi mais rapido por 2 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0000789
+Tempo de execução BubbleSort - 00:00:00.0000352
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003441
+Tempo de execução BubbleSort - 00:00:00.0001356
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 53
+Tempo de execução QuickSort - 00:00:00.0001849
+Tempo de execução BubbleSort - 00:00:00.0001641
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003500
+Tempo de execução BubbleSort - 00:00:00.0001327
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 52
+Tempo de execução QuickSort - 00:00:00.0002147
+Tempo de execução BubbleSort - 00:00:00.0002047
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 79
+Tempo de execução QuickSort - 00:00:00.0000739
+Tempo de execução BubbleSort - 00:00:00.0003341
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 106
+Tempo de execução QuickSort - 00:00:00.0001199
+Tempo de execução BubbleSort - 00:00:00.0006621
+QuickSort foi mais rapido por 2 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 133
+Tempo de execução QuickSort - 00:00:00.0001537
+Tempo de execução BubbleSort - 00:00:00.0009599
+QuickSort foi mais rapido por 2 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 160
+Tempo de execução QuickSort - 00:00:00.0001916
+Tempo de execução BubbleSort - 00:00:00.0013820
+QuickSort foi mais rapido por 3 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 187
+Tempo de execução QuickSort - 00:00:00.0002798
+Tempo de execução BubbleSort - 00:00:00.0021228
+QuickSort foi mais rapido por 6 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 214
+Tempo de execução QuickSort - 00:00:00.0002469
+Tempo de execução BubbleSort - 00:00:00.0024251
+QuickSort foi mais rapido por 6 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 241
+Tempo de execução QuickSort - 00:00:00.0002366
+Tempo de execução BubbleSort - 00:00:00.0022572
+QuickSort foi mais rapido por 6 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 268
+Tempo de execução QuickSort - 00:00:00.0002291
+Tempo de execução BubbleSort - 00:00:00.0026565
+QuickSort foi mais rapido por 8 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003559
+Tempo de execução BubbleSort - 00:00:00.0001349
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 52
+Tempo de execução QuickSort - 00:00:00.0001689
+Tempo de execução BubbleSort - 00:00:00.0001528
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 78
+Tempo de execução QuickSort - 00:00:00.0000572
+Tempo de execução BubbleSort - 00:00:00.0002729
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003559
+Tempo de execução BubbleSort - 00:00:00.0001355
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 53
+Tempo de execução QuickSort - 00:00:00.0001765
+Tempo de execução BubbleSort - 00:00:00.0001521
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 82
+Tempo de execução QuickSort - 00:00:00.0000996
+Tempo de execução BubbleSort - 00:00:00.0004204
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003497
+Tempo de execução BubbleSort - 00:00:00.0001371
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0001065
+Tempo de execução BubbleSort - 00:00:00.0000511
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0003494
+Tempo de execução BubbleSort - 00:00:00.0001487
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 26
+Tempo de execução QuickSort - 00:00:00.0000909
+Tempo de execução BubbleSort - 00:00:00.0000395
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 27
+Tempo de execução QuickSort - 00:00:00.0000648
+Tempo de execução BubbleSort - 00:00:00.0000414
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 1
+Tempo de execução QuickSort - 00:00:08.4567587
+Tempo de execução BubbleSort - 00:00:03.8346519
+BubbleSort foi mais rapido por 13866 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 4
+Tempo de execução QuickSort - 00:00:00.0001845
+Tempo de execução BubbleSort - 00:00:00.0000031
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 5
+Tempo de execução QuickSort - 00:00:00.0000044
+Tempo de execução BubbleSort - 00:00:00.0000015
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 3
+Tempo de execução QuickSort - 00:00:00.0000027
+Tempo de execução BubbleSort - 00:00:00.0000008
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------
+Massa de dados - 1
+Tempo de execução QuickSort - 00:00:00.0000003
+Tempo de execução BubbleSort - 00:00:00.0000002
+BubbleSort foi mais rapido por 0 Mili Segundos
+--------------------------------------------------------------------------------------

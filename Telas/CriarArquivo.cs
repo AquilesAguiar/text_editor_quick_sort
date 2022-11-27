@@ -33,7 +33,13 @@ namespace Telas
 
         private void Verificar(object sender, EventArgs e)
         {
-            manipularArquivo.adicionarEscritaArquivo(caminhoArquivo, CampoTexto.Text);
+            naoContidas = new List<Palavra>();
+            foreach (DataGridViewRow item in this.TabelaPalavras.SelectedRows)
+            {
+                TabelaPalavras.Rows.RemoveAt(item.Index);
+            }
+
+            manipularArquivo.sobrescreverArquivo(caminhoArquivo, CampoTexto.Text);
 
             string dirDicionario = dirAtual + "\\..\\..\\..\\Arquivos\\dicionario.txt";
             // Lendo o dicionário e arquivo criado
@@ -45,7 +51,6 @@ namespace Telas
             string[] palavrasDicionario = dicionarioCompleto.Split(' ').ToArray();
             // Pegando as palavras do TextBox que tem no dicionário
             string[] notPalavrasEmComum = palavras.Where(palavra => !palavrasDicionario.Contains(palavra)).ToArray();
-
             for (int i = 0; i < notPalavrasEmComum.Length; i++)
             {
                 naoContidas.Add(new Palavra(i, notPalavrasEmComum[i]));
@@ -59,7 +64,6 @@ namespace Telas
             var stopwatch = new Stopwatch();
                         
             ISorteamento QuickSortMethod = new QuickSortMethod();
-            
             ISorteamento BubbleSort = new BubbleSort();
 
             //Contagem QuickSort
@@ -88,6 +92,8 @@ namespace Telas
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
             Console.WriteLine($"QuickSort: {printadoQuick}\nBubbleSort: {printadoBubble}");
+            TabelaPalavras.Update();
+            TabelaPalavras.Refresh();
         }
 
         private void PalavrasComum_Click(object sender, EventArgs e)
@@ -148,6 +154,14 @@ namespace Telas
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < naoContidas.Count; i++)
+            {
+                naoContidas[i].Dicionario = true;
+            }
         }
     }
 }

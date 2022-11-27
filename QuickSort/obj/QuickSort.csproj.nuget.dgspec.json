@@ -1,28 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aquil\\OneDrive\\Documentos\\GitHub\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj": {}
+    "C:\\Users\\breno\\Source\\Repos\\AquilesAguiar\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aquil\\OneDrive\\Documentos\\GitHub\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj": {
+    "C:\\Users\\breno\\Source\\Repos\\AquilesAguiar\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aquil\\OneDrive\\Documentos\\GitHub\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj",
+        "projectUniqueName": "C:\\Users\\breno\\Source\\Repos\\AquilesAguiar\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj",
         "projectName": "QuickSort",
-        "projectPath": "C:\\Users\\aquil\\OneDrive\\Documentos\\GitHub\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj",
-        "packagesPath": "C:\\Users\\aquil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aquil\\OneDrive\\Documentos\\GitHub\\text_editor_quick_sort\\QuickSort\\obj\\",
+        "projectPath": "C:\\Users\\breno\\Source\\Repos\\AquilesAguiar\\text_editor_quick_sort\\QuickSort\\QuickSort.csproj",
+        "packagesPath": "C:\\Users\\breno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\breno\\Source\\Repos\\AquilesAguiar\\text_editor_quick_sort\\QuickSort\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aquil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\breno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net4.7.2"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -43,7 +43,7 @@
       "frameworks": {
         "net472": {
           "targetAlias": "net4.7.2",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
