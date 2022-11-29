@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Telas
 {
     public partial class TelaPrincipal : Form
-    {
+    {   
         public TelaPrincipal()
         {
             InitializeComponent();
@@ -29,6 +29,7 @@ namespace Telas
         {
             this.Hide();
             EditarArquivo editarArquivo = new EditarArquivo();
+            editarArquivo.Text = "Edição de arquivo";
             editarArquivo.ShowDialog();
             this.Show();
         }
@@ -37,6 +38,7 @@ namespace Telas
         {
             this.Hide();
             CriarArquivo criarArquivo = new CriarArquivo();
+            criarArquivo.Text = "Criação de arquivo";
             criarArquivo.ShowDialog();
             this.Show();
         }
