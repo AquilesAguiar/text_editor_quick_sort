@@ -88,7 +88,7 @@ namespace Telas
             
             //Salvando dados da execução
             Operations.testesExecucao(QuickSortTs, BubbleSortTs, palavras.Length);
-
+            
             String printadoQuick = String.Join(" ", quickSortResult);
             String printadoBubble = String.Join(" ", bubbleSortResult);
             Console.WriteLine($"QuickSort: {printadoQuick}\nBubbleSort: {printadoBubble}");

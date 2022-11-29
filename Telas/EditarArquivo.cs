@@ -63,6 +63,8 @@ namespace Telas
             string dicionarioCompleto = manipularArquivo.lerArquivo(dirDicionario);
             // Splitando as palavras do dicionário e do TextBox
             string textoFormatado = Regex.Replace(textoCompleto, @"[^0-9a-zA-Z ]", "");
+            dicionarioCompleto = Regex.Replace(dicionarioCompleto, @"[^0-9a-zA-Z ]", "");
+            //textoFormatado = textoFormatado.Replace("\n", "").Replace("\r", "").Replace(" ", "");
             string[] palavras = textoFormatado.Split(' ').ToArray();
             string[] palavrasDicionario = dicionarioCompleto.Split(' ').ToArray();
             // Pegando as palavras do TextBox que tem no dicionário
@@ -95,7 +97,7 @@ namespace Telas
             stopwatch.Start();
 
             string[] bubbleSortResult = BubbleSort.Sortear(palavras);
-
+            Console.WriteLine(quickSortResult);
             stopwatch.Stop();
             Console.WriteLine($"Tempo passado BubbleSort: {stopwatch.Elapsed}");
 
